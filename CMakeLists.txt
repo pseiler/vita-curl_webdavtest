@@ -12,7 +12,7 @@ set(SHORT_NAME vita-curl_webdavtest)
 project(${SHORT_NAME})
 include("${VITASDK}/share/vita.cmake" REQUIRED)
 
-set(VITA_APP_NAME "Net Libcurl example")
+set(VITA_APP_NAME "vita-curl_webdavtest")
 set(VITA_TITLEID  "VSDK00023")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu11")
@@ -26,6 +26,7 @@ include_directories(
 )
 
 add_executable(${SHORT_NAME}
+  src/webdav.cpp
   src/main.cpp
 )
 
